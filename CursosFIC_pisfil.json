@@ -1,0 +1,986 @@
+[
+{
+"name":"Concreto Armado I",
+"code":"ES731",
+"cycle":7,
+"sections":[
+{"name":"G","teacher":"Ing. Hugo Vargas","blocks":[
+{"day":0,"type":"Teoría","start":16,"end":18,"room":"G2-202"},
+{"day":3,"type":"Teoría","start":16,"end":18,"room":"G2-232"},
+{"day":2,"type":"Práctica","start":16,"end":18,"room":"G2-372"}
+]},
+{"name":"H","teacher":"Ing. Jose Masias","blocks":[
+{"day":0,"type":"Teoría","start":10,"end":12,"room":"G2-392"},
+{"day":2,"type":"Teoría","start":10,"end":12,"room":"G2-332"},
+{"day":1,"type":"Práctica","start":10,"end":12,"room":"J2-252"}
+]},
+{"name":"I","teacher":"Ing. Jorge Gallardo","blocks":[
+{"day":1,"type":"Teoría","start":10,"end":12,"room":"G2-222"},
+{"day":3,"type":"Teoría","start":10,"end":12,"room":"G2-222"},
+{"day":2,"type":"Práctica","start":14,"end":16,"room":"G2-142"}
+]},
+{"name":"J","teacher":"Ing. Juan Ferreyra","blocks":[
+{"day":0,"type":"Teoría","start":16,"end":18,"room":"G9-202"},
+{"day":3,"type":"Teoría","start":16,"end":18,"room":"G2-342"},
+{"day":1,"type":"Práctica","start":14,"end":16,"room":"G2-142"}
+]},
+{"name":"K","teacher":"Ing. Patricia Gibu","blocks":[
+{"day":2,"type":"Teoría","start":10,"end":12,"room":"G2-322"},
+{"day":4,"type":"Teoría","start":10,"end":12,"room":"G2-212"},
+{"day":1,"type":"Práctica","start":10,"end":12,"room":"G2-202"}
+]}
+]
+},
+
+{
+"name":"Hidrologia General",
+"code":"HH113",
+"cycle":7,
+"sections":[
+{"name":"G","teacher":"Ing. Romero Machuca","blocks":[
+{"day":1,"type":"Teoría","start":8,"end":10,"room":"G2-122"},
+{"day":3,"type":"Práctica","start":8,"end":10,"room":"G2-362"}
+]},
+{"name":"H","teacher":"Ing. Miguel Zubiaur","blocks":[
+{"day":2,"type":"Teoría","start":8,"end":10,"room":"G2-302"},
+{"day":0,"type":"Práctica","start":8,"end":10,"room":"G2-132"}
+]},
+{"name":"I","teacher":"Ing. Patricia Calderon","blocks":[
+{"day":0,"type":"Teoría","start":16,"end":18,"room":"G2-392"},
+{"day":0,"type":"Práctica","start":18,"end":20,"room":"G2-392"}
+]},
+{"name":"J","teacher":"Ing. Nuñez Smith","blocks":[
+{"day":3,"type":"Teoría","start":10,"end":12,"room":"G2-352"},
+{"day":2,"type":"Práctica","start":10,"end":12,"room":"G2-382"}
+]}
+]
+},
+
+{
+"name":"Evaluacion de Impacto Ambiental",
+"code":"CO722",
+"cycle":7,
+"sections":[
+{"name":"G","teacher":"Ing. Jose Millones","blocks":[
+{"day":3,"type":"Teoría","start":16,"end":18,"room":"G2-152"},
+{"day":1,"type":"Práctica","start":16,"end":18,"room":"G2-232"}
+]},
+{"name":"H","teacher":"Ing. Eden Atalaya","blocks":[
+{"day":4,"type":"Teoría","start":8,"end":10,"room":"G2-222"},
+{"day":4,"type":"Práctica","start":10,"end":12,"room":"G2-132"}
+]},
+{"name":"I","teacher":"Ing. Vlademir Lozano","blocks":[
+{"day":2,"type":"Teoría","start":18,"end":20,"room":"G2-152"},
+{"day":3,"type":"Práctica","start":18,"end":20,"room":"G2-130"}
+]}
+]
+},
+
+{
+"name":"Gestion Integrada en la Construccion",
+"code":"CO721",
+"cycle":7,
+"sections":[
+{"name":"G","teacher":"Ing. Felix Ulloa","blocks":[
+{"day":0,"type":"Taller","start":14,"end":16,"room":"G2-372"},
+{"day":2,"type":"Taller","start":14,"end":16,"room":"G2-242"},
+{"day":3,"type":"Práctica","start":14,"end":16,"room":"G2-372"}
+]},
+{"name":"H","teacher":"Ing. Enrique Huaroto","blocks":[
+{"day":0,"type":"Taller","start":18,"end":20,"room":"J2-192"},
+{"day":3,"type":"Taller","start":14,"end":16,"room":"G2-202"},
+{"day":4,"type":"Práctica","start":16,"end":18,"room":"G2-202"}
+]},
+{"name":"I","teacher":"Ing. Santa Maria Davila","blocks":[
+{"day":0,"type":"Taller","start":17,"end":19,"room":"G2-372"},
+{"day":0,"type":"Taller","start":19,"end":21,"room":"G2-372"},
+{"day":1,"type":"Práctica","start":17,"end":19,"room":"G2-272"}
+]}
+]
+},
+
+{
+"name":"Acondicionamiento Territorial I",
+"code":"CO822",
+"cycle":8,
+"sections":[
+{"name":"G","teacher":"Ing. Eden Atalaya","blocks":[
+{"day":0,"type":"Taller","start":10,"end":12,"room":"G2-122"},
+{"day":5,"type":"Taller","start":8,"end":10,"room":"G1-212"},
+{"day":0,"type":"Práctica","start":14,"end":16,"room":"G2-342"}
+]},
+{"name":"H","teacher":"Ing. Francisco Montero","blocks":[
+{"day":0,"type":"Taller","start":14,"end":16,"room":"G2-122"},
+{"day":5,"type":"Taller","start":8,"end":10,"room":"G2-262"},
+{"day":5,"type":"Práctica","start":10,"end":12,"room":"G2-262"}
+]},
+{"name":"I","teacher":"Ing. Cardenas Saavedra","blocks":[
+{"day":0,"type":"Taller","start":16,"end":18,"room":"G2-272"},
+{"day":5,"type":"Taller","start":8,"end":10,"room":"G2-362"},
+{"day":0,"type":"Práctica","start":18,"end":20,"room":"G2-202"}
+]}
+]
+},
+
+{
+"name":"Instalaciones Sanitarias y Electricas",
+"code":"CO823",
+"cycle":8,
+"sections":[
+{"name":"G","teacher":"Ing. Huari Cama","blocks":[
+{"day":1,"type":"Taller","start":16,"end":18,"room":"G2-202"},
+{"day":4,"type":"Taller","start":16,"end":18,"room":"G2-222"},
+{"day":1,"type":"Práctica","start":18,"end":20,"room":"G2-122"}
+]},
+{"name":"H","teacher":"Ing. Cavero Torres","blocks":[
+{"day":0,"type":"Taller","start":16,"end":18,"room":"G2-222"},
+{"day":0,"type":"Taller","start":18,"end":20,"room":"G2-222"},
+{"day":4,"type":"Práctica","start":18,"end":20,"room":"G2-130"}
+]},
+{"name":"I","teacher":"Ing. Huari Cama","blocks":[
+{"day":1,"type":"Taller","start":14,"end":16,"room":"G2-242"},
+{"day":4,"type":"Taller","start":14,"end":16,"room":"G2-142"},
+{"day":3,"type":"Práctica","start":17,"end":19,"room":"J2-192"}
+]}
+]
+},
+{
+"name":"Tecnologia de la Construccion III",
+"code":"CO923",
+"cycle":"Electivo",
+"sections":[
+{"name":"G","teacher":"Ing. Padilla Laguna","blocks":[
+{"day":1,"type":"Teoría","start":16,"end":18,"room":"G2-352"},
+{"day":1,"type":"Práctica","start":18,"end":20,"room":"G2-352"}
+]}
+]
+},
+
+
+{
+"name":"Ingenieria Sismorresistente y prevencion de desatres",
+"code":"ES831",
+"cycle":8,
+"sections":[
+{"name":"G","teacher":"Ing. Edisson Moscoso","blocks":[
+{"day":0,"type":"Teoría","start":10,"end":12,"room":"G2-362"},
+{"day":2,"type":"Teoría","start":10,"end":12,"room":"G2-392"},
+{"day":4,"type":"Práctica","start":14,"end":16,"room":"G2-222"}
+]},
+{"name":"H","teacher":"Ing. Milciades Olarte","blocks":[
+{"day":0,"type":"Teoría","start":8,"end":10,"room":"G2-102"},
+{"day":2,"type":"Teoría","start":8,"end":10,"room":"G2-232"},
+{"day":4,"type":"Práctica","start":16,"end":18,"room":"G2-242"}
+]},
+{"name":"I","teacher":"Ing. Quiroz Torres","blocks":[
+{"day":1,"type":"Teoría","start":8,"end":10,"room":"G2-392"},
+{"day":3,"type":"Teoría","start":8,"end":10,"room":"G2-372"},
+{"day":5,"type":"Práctica","start":10,"end":12,"room":"G2-242"}
+]},
+{"name":"J","teacher":"Ing. Salinas Basualdo","blocks":[
+{"day":1,"type":"Teoría","start":10,"end":12,"room":"G2-232"},
+{"day":3,"type":"Teoría","start":10,"end":12,"room":"G2-342"},
+{"day":4,"type":"Práctica","start":14,"end":16,"room":"G2-302"}
+]}
+]
+},
+{
+"name":"Diseño Vial",
+"code":"TV761",
+"cycle":7,
+"sections":[
+{"name":"G","teacher":"Ing. Eto Fanny","blocks":[
+{"day":3,"type":"Teoría","start":8,"end":10,"room":"J2-192"},
+{"day":5,"type":"Práctica","start":8,"end":12,"room":"J2-192"}
+]},
+{"name":"H","teacher":"Ing. Mercedes Rodriguez","blocks":[
+{"day":1,"type":"Teoría","start":14,"end":16,"room":"G9-300B"},
+{"day":2,"type":"Práctica","start":14,"end":18,"room":"CC-VG"}
+]},
+{"name":"I","teacher":"Ing. Mercedes Rodriguez","blocks":[
+{"day":0,"type":"Teoría","start":10,"end":12,"room":"J2-192"},
+{"day":2,"type":"Práctica","start":9,"end":13,"room":"CC-VG"}
+]},
+{"name":"J","teacher":"Ing. Eto Fanny","blocks":[
+{"day":1,"type":"Teoría","start":8,"end":10,"room":"J2-192"},
+{"day":3,"type":"Práctica","start":14,"end":18,"room":"AUD-VG"}
+]}
+]
+},
+
+{
+"name":"Cartografia General y Diseño Cartografico",
+"code":"TV513",
+"cycle":"Electivo",
+"sections":[
+{"name":"G","teacher":"Ing. Martinez Barraza","blocks":[
+{"day":3,"type":"Teoría","start":15,"end":18,"room":"CC-VG"},
+{"day":2,"type":"Práctica","start":16,"end":18,"room":"J2-232"}
+]}
+]
+},
+
+{
+"name":"Mecanica de suelos Aplicada a Cimentaciones",
+"code":"EC521",
+"cycle":"Electivo",
+"sections":[
+{"name":"G","teacher":"Ing. Atala Abad ","blocks":[
+{"day":3,"type":"Teoría","start":10,"end":13,"room":"G2-322"},
+{"day":4,"type":"Práctica","start":14,"end":16,"room":"G9-202"}
+]},
+{"name":"H","teacher":"Ing. Alva Hurtado","blocks":[
+{"day":0,"type":"Teoría","start":10,"end":13,"room":"G9-201"},
+{"day":4,"type":"Práctica","start":14,"end":16,"room":"G9-201"}
+]}
+]
+},
+
+{
+"name":"Fotogrametria",
+"code":"TV413",
+"cycle":"Electivo",
+"sections":[
+{"name":"G","teacher":"Ing. Julio Cruzado","blocks":[
+{"day":1,"type":"Teoría","start":10,"end":12,"room":"J2-192"},
+{"day":3,"type":"Práctica","start":10,"end":12,"room":"G2-392"}
+]}
+]
+},
+
+{
+"name":"Ferrocarriles",
+"code":"TV715",
+"cycle":"Electivo",
+"sections":[
+{"name":"G","teacher":"Ing. Erich Villavicencio","blocks":[
+{"day":1,"type":"Teoría","start":18,"end":20,"room":"J2-102"},
+{"day":4,"type":"Práctica","start":18,"end":20,"room":"J2-102"}
+]}
+]
+},
+
+{
+"name":"Pavimentos",
+"code":"TV625",
+"cycle":"Electivo",
+"sections":[
+{"name":"G","teacher":"Ing. Eto Fanny","blocks":[
+{"day":1,"type":"Teoría","start":14,"end":17,"room":"J2-102"},
+{"day":2,"type":"Práctica","start":14,"end":16,"room":"J2-102"}
+]}
+]
+},
+
+{
+"name":"Puertos",
+"code":"TV815",
+"cycle":"Electivo",
+"sections":[
+{"name":"G","teacher":"Ing. Ever Caceres","blocks":[
+{"day":1,"type":"Teoría","start":16,"end":18,"room":"AUD-VG"},
+{"day":2,"type":"Práctica","start":14,"end":16,"room":"J2-192"}
+]}
+]
+},
+
+{
+"name":"Caminos II",
+"code":"TV616",
+"cycle":"Electivo",
+"sections":[
+{"name":"G","teacher":"Ing. Juan Apaclla","blocks":[
+{"day":2,"type":"Teoría","start":8,"end":10,"room":"J2-192"},
+{"day":2,"type":"Práctica","start":10,"end":12,"room":"J2-192"}
+]}
+]
+},
+
+{
+"name":"Dinamica de Suelos",
+"code":"EC514",
+"cycle":"Electivo",
+"sections":[
+{"name":"G","teacher":"Ing. Dennys Parra","blocks":[
+{"day":5,"type":"Teoría","start":8,"end":9,"room":"G2-272"},
+{"day":2,"type":"Teoría","start":16,"end":18,"room":"G2-392"},
+{"day":5,"type":"Práctica","start":9,"end":11,"room":"G2-272"}
+]}
+]
+},
+
+{
+"name":"Geodesia Satelital",
+"code":"TV561",
+"cycle":5,
+"sections":[
+{"name":"G","teacher":"Ing. Barreto Ruiz","blocks":[
+{"day":4,"type":"Teoría","start":14,"end":15,"room":"J2-192"},
+{"day":0,"type":"Práctica","start":9,"end":13,"room":"J2-252"}
+]},
+{"name":"H","teacher":"Ing. Barreto Ruiz","blocks":[
+{"day":0,"type":"Teoría","start":8,"end":9,"room":"J2-232"},
+{"day":3,"type":"Práctica","start":14,"end":18,"room":"J2-232"}
+]},
+{"name":"I","teacher":"Ing. Mendoza Dueñas","blocks":[
+{"day":0,"type":"Teoría","start":14,"end":15,"room":"J2-192"},
+{"day":1,"type":"Práctica","start":9,"end":13,"room":"J2-232"}
+]},
+{"name":"J","teacher":"Ing. Mendoza Dueñas","blocks":[
+{"day":1,"type":"Teoría","start":8,"end":9,"room":"J2-232"},
+{"day":4,"type":"Práctica","start":8,"end":12,"room":"J2-232"}
+]},
+{"name":"K","teacher":"Ing. Martinez Barraza","blocks":[
+{"day":3,"type":"Teoría","start":14,"end":15,"room":"CC-VG"},
+{"day":4,"type":"Práctica","start":14,"end":18,"room":"J2-252"}
+]}
+]
+},
+
+{
+"name":"Ingenieria de Transportes",
+"code":"TV661",
+"cycle":6,
+"sections":[
+{"name":"G","teacher":"Ing. Erich Villavicencio","blocks":[
+{"day":1,"type":"Teoría","start":14,"end":16,"room":"G2-102"}
+]},
+{"name":"H","teacher":"Ing. Matias Leon","blocks":[
+{"day":1,"type":"Teoría","start":14,"end":16,"room":"G2-122"}
+]},
+{"name":"I","teacher":"Ing. Grandez Ventura","blocks":[
+{"day":1,"type":"Teoría","start":14,"end":16,"room":"G2-130"}
+]},
+{"name":"J","teacher":"Ing. Caceres Perez","blocks":[
+{"day":1,"type":"Teoría","start":14,"end":16,"room":"G2-342"}
+]}
+]
+},
+
+{
+"name":"Mecanica de Fluidos I",
+"code":"HH223",
+"cycle":5,
+"sections":[
+{"name":"G","teacher":"Ing. Hugo Maldonado","blocks":[
+{"day":1,"type":"Teoría","start":8,"end":10,"room":"G2-322"},
+{"day":3,"type":"Taller","start":8,"end":10,"room":"G2-232"},
+{"day":3,"type":"Práctica","start":10,"end":12,"room":"G2-152"}
+]},
+{"name":"H","teacher":"Ing. Lidia Malpica","blocks":[
+{"day":2,"type":"Teoría","start":8,"end":10,"room":"G2-392"},
+{"day":3,"type":"Taller","start":10,"end":12,"room":"G2-252"},
+{"day":2,"type":"Práctica","start":14,"end":16,"room":"G1-212"}
+]},
+{"name":"I","teacher":"Ing. Sabino Basualdo","blocks":[
+{"day":0,"type":"Teoría","start":16,"end":18,"room":"G2-362"},
+{"day":1,"type":"Taller","start":16,"end":18,"room":"G2-130"},
+{"day":2,"type":"Práctica","start":16,"end":18,"room":"G1-212"}
+]},
+{"name":"J","teacher":"Ing. Nuñez Smith","blocks":[
+{"day":1,"type":"Teoría","start":8,"end":10,"room":"G2-132"},
+{"day":3,"type":"Taller","start":14,"end":16,"room":"G2-332"},
+{"day":2,"type":"Práctica","start":18,"end":20,"room":"G2-272"}
+]},
+{"name":"K","teacher":"Ing. Belinda Guillen","blocks":[
+{"day":0,"type":"Teoría","start":10,"end":12,"room":"G2-102"},
+{"day":1,"type":"Taller","start":14,"end":16,"room":"G2-372"},
+{"day":0,"type":"Práctica","start":16,"end":18,"room":"G2-102"}
+]}
+]
+},
+
+{
+"name":"Mecanica de Fluidos II",
+"code":"HH224",
+"cycle":6,
+"sections":[
+{"name":"G","teacher":"Ing. Julio Kuroiwa","blocks":[
+{"day":4,"type":"Teoría","start":8,"end":10,"room":"G2-122"},
+{"day":5,"type":"Taller","start":8,"end":10,"room":"G2-102"},
+{"day":0,"type":"Práctica","start":14,"end":16,"room":"G2-202"}
+]},
+{"name":"H","teacher":"Ing. Rodriguez Zubiate","blocks":[
+{"day":1,"type":"Teoría","start":10,"end":12,"room":"G2-202"},
+{"day":3,"type":"Taller","start":10,"end":12,"room":"G2-242"},
+{"day":2,"type":"Práctica","start":10,"end":12,"room":"G2-232"}
+]},
+{"name":"I","teacher":"Ing. Silva Davila","blocks":[
+{"day":2,"type":"Teoría","start":10,"end":12,"room":"G2-152"},
+{"day":3,"type":"Taller","start":10,"end":12,"room":"G2-102"},
+{"day":1,"type":"Práctica","start":16,"end":18,"room":"G2-142"}
+]},
+{"name":"J","teacher":"Ing. Ibañez XD","blocks":[
+{"day":0,"type":"Teoría","start":10,"end":12,"room":"CCFIC-SC"},
+{"day":2,"type":"Taller","start":10,"end":12,"room":"G2-122"},
+{"day":0,"type":"Práctica","start":14,"end":16,"room":"G2-152"}
+]},
+{"name":"K","teacher":"Ing. Campaña Toro","blocks":[
+{"day":1,"type":"Teoría","start":16,"end":18,"room":"G2-132"},
+{"day":2,"type":"Taller","start":16,"end":18,"room":"G2-332"},
+{"day":0,"type":"Práctica","start":18,"end":20,"room":"G2-242"}
+]}
+]
+},
+
+{
+"name":"Mecanica de Suelos II",
+"code":"EC513",
+"cycle":6,
+"sections":[
+{"name":"G","teacher":"Ing. Diana Calderon","blocks":[
+{"day":0,"type":"Teoría","start":10,"end":13,"room":"G9-202"},
+{"day":4,"type":"Práctica","start":10,"end":12,"room":"G2-152"}
+]},
+{"name":"H","teacher":"Ing. Jorge Cardenas","blocks":[
+{"day":5,"type":"Teoría","start":10,"end":13,"room":"G2-332"},
+{"day":4,"type":"Práctica","start":14,"end":16,"room":"G2-272"}
+]},
+{"name":"I","teacher":"Ing. Perez Collantes","blocks":[
+{"day":1,"type":"Teoría","start":10,"end":13,"room":"G9-201"},
+{"day":0,"type":"Práctica","start":14,"end":16,"room":"G2-102"}
+]},
+{"name":"J","teacher":"Ing. Perez Collantes","blocks":[
+{"day":2,"type":"Teoría","start":10,"end":13,"room":"CCFIC-SA"},
+{"day":0,"type":"Práctica","start":16,"end":18,"room":"G2-252"}
+]}
+]
+},
+
+{
+"name":"Analisis Estructural I",
+"code":"EC211",
+"cycle":6,
+"sections":[
+{"name":"G","teacher":"Ing. Milciades Olarte","blocks":[
+{"day":0,"type":"Teoría","start":10,"end":12,"room":"G2-132"},
+{"day":2,"type":"Teoría","start":10,"end":12,"room":"G2-362"},
+{"day":4,"type":"Práctica","start":14,"end":16,"room":"G2-232"}
+]},
+{"name":"H","teacher":"Ing. Quiroz Torres","blocks":[
+{"day":1,"type":"Teoría","start":10,"end":12,"room":"G2-132"},
+{"day":3,"type":"Teoría","start":10,"end":12,"room":"G2-362"},
+{"day":5,"type":"Práctica","start":8,"end":10,"room":"G2-142"}
+]},
+{"name":"I","teacher":"Ing. Luis Vargas","blocks":[
+{"day":0,"type":"Teoría","start":18,"end":20,"room":"G2-362"},
+{"day":3,"type":"Teoría","start":18,"end":20,"room":"G2-302"},
+{"day":1,"type":"Práctica","start":14,"end":16,"room":"G1-212"}
+]},
+{"name":"J","teacher":"Ing. Patricia Gibu","blocks":[
+{"day":1,"type":"Teoría","start":8,"end":10,"room":"G2-352"},
+{"day":4,"type":"Teoría","start":8,"end":10,"room":"G2-212"},
+{"day":2,"type":"Práctica","start":8,"end":10,"room":"G2-262"}
+]},
+{"name":"K","teacher":"Ing. Roy Reyna","blocks":[
+{"day":0,"type":"Teoría","start":14,"end":16,"room":"G2-352"},
+{"day":2,"type":"Teoría","start":14,"end":16,"room":"G2-272"},
+{"day":0,"type":"Práctica","start":16,"end":18,"room":"J2-232"}
+]}
+]
+},
+
+
+{
+"name":"Geologia Aplicada",
+"code":"GE831",
+"cycle":7,
+"sections":[
+{"name":"G","teacher":"Ing. Hijar - Minaya","blocks":[
+{"day":2,"type":"Teoría","start":17,"end":20,"room":"G2-132"},
+{"day":0,"type":"Práctica","start":19,"end":21,"room":"G2-132"}
+]},
+{"name":"H","teacher":"Ing. Serafin Hijar","blocks":[
+{"day":4,"type":"Teoría","start":17,"end":20,"room":"G2-132"},
+{"day":1,"type":"Práctica","start":18,"end":20,"room":"G2-132"}
+]},
+{"name":"I","teacher":"Ing. Zedano Cornejo","blocks":[
+{"day":2,"type":"Teoría","start":17,"end":20,"room":"G2-130"},
+{"day":0,"type":"Práctica","start":18,"end":20,"room":"G2-122"}
+]},
+{"name":"J","teacher":"Ing. Espinoza Ccente","blocks":[
+{"day":3,"type":"Teoría","start":17,"end":20,"room":"G2-392"},
+{"day":0,"type":"Práctica","start":17,"end":19,"room":"G2-322"}
+]}
+]
+},
+
+{
+"name":"Mecanica de Suelos Aplicada a Vias de Transportes",
+"code":"EC522",
+"cycle":"Electivo",
+"sections":[
+{"name":"G","teacher":"Ing. Gutierrez Lazares","blocks":[
+{"day":1,"type":"Teoría","start":10,"end":12,"room":"AUD-FIC"},
+{"day":3,"type":"Práctica","start":10,"end":12,"room":"CCFIC-SB"}
+]}
+]
+},
+
+{
+"name":"Transito y Diseño Vial",
+"code":"AU445",
+"cycle":"Electivo",
+"sections":[
+{"name":"G","teacher":"Ing. Matias Leon","blocks":[
+{"day":1,"type":"Teoría","start":10,"end":12,"room":"G9-300A"},
+{"day":3,"type":"Práctica","start":14,"end":16,"room":"J2-192"}
+]}
+]
+},
+
+{
+"name":"Analisis Estructural II",
+"code":"ES934",
+"cycle":"Electivo",
+"sections":[
+{"name":"G","teacher":"Ing. Hugo Scaletti ","blocks":[
+{"day":1,"type":"Teoría","start":10,"end":12,"room":"G2-152"},
+{"day":3,"type":"Teoría","start":10,"end":12,"room":"G2-142"},
+{"day":3,"type":"Práctica","start":16,"end":18,"room":"G1-212"}
+]}
+]
+},
+
+{
+"name":"Concreto Armado II",
+"code":"EC312",
+"cycle":"Electivo",
+"sections":[
+{"name":"G","teacher":"Ing. Claudia Villanueva","blocks":[
+{"day":1,"type":"Teoría","start":8,"end":10,"room":"G2-342"},
+{"day":1,"type":"Teoría","start":14,"end":16,"room":"G2-302"},
+{"day":1,"type":"Práctica","start":16,"end":18,"room":"G2-302"}
+]}
+]
+},
+
+{
+"name":"Concreto Presforzado",
+"code":"EC935",
+"cycle":"Electivo",
+"sections":[
+{"name":"G","teacher":"Ing. Villena Sotomayor","blocks":[
+{"day":1,"type":"Teoría","start":10,"end":12,"room":"G2-382"},
+{"day":1,"type":"Práctica","start":14,"end":16,"room":"G2-392"}
+]}
+]
+},
+
+{
+"name":"SIG",
+"code":"TV961",
+"cycle":"Electivo",
+"sections":[
+{"name":"G","teacher":"Ing. Miguel Estrada","blocks":[
+{"day":4,"type":"Teoría","start":8,"end":11,"room":"CC-VG"},
+{"day":4,"type":"Práctica","start":11,"end":13,"room":"CC-VG"}
+]}
+]
+},
+
+{
+"name":"Arquitectura y modelos Estructurales",
+"code":"ES936",
+"cycle":9,
+"sections":[
+{"name":"G","teacher":"Ing. Liliana Asencios","blocks":[
+{"day":0,"type":"Taller","start":14,"end":18,"room":"G1-212"},
+{"day":0,"type":"Práctica","start":11,"end":13,"room":"G2-152"}
+]},
+{"name":"H","teacher":"Ing. Liliana Asencios","blocks":[
+{"day":2,"type":"Taller","start":14,"end":18,"room":"J2-252"},
+{"day":2,"type":"Práctica","start":10,"end":12,"room":"G2-130"}
+]},
+{"name":"I","teacher":"Ing. Karim Rau","blocks":[
+{"day":1,"type":"Taller","start":14,"end":18,"room":"G4-400"},
+{"day":1,"type":"Práctica","start":11,"end":13,"room":"G4-400"}
+]}
+]
+},
+
+
+{
+"name":"Tecnologia de la Construccion II",
+"code":"CO621",
+"cycle":6,
+"sections":[
+{"name":"G","teacher":"Ing. Miranda Hospinal","blocks":[
+{"day":1,"type":"Teoría","start":18,"end":20,"room":"G2-102"},
+{"day":4,"type":"Teoría","start":15,"end":16,"room":"G2-122"},
+{"day":4,"type":"Práctica","start":16,"end":18,"room":"G2-272"}
+]},
+{"name":"H","teacher":"Ing. Rafael Cachay - Soto Lugo","blocks":[
+{"day":3,"type":"Teoría","start":14,"end":15,"room":"J2-102"},
+{"day":3,"type":"Teoría","start":8,"end":10,"room":"G2-202"},
+{"day":5,"type":"Práctica","start":8,"end":10,"room":"G2-132"}
+]},
+{"name":"I","teacher":"Ing. Max Huaynalaya - Chuquivilca ","blocks":[
+{"day":4,"type":"Teoría","start":17,"end":20,"room":"G2-232"},
+{"day":2,"type":"Práctica","start":18,"end":20,"room":"G2-202"}
+]}
+]
+},
+
+{
+"name":"Gestion de Proyectos de Construccion I",
+"code":"CO821",
+"cycle":8,
+"sections":[
+{"name":"G","teacher":"Ing. Rios Segura","blocks":[
+{"day":0,"type":"Taller","start":8,"end":10,"room":"G2-302"},
+{"day":4,"type":"Taller","start":10,"end":12,"room":"G2-102"},
+{"day":2,"type":"Práctica","start":10,"end":12,"room":"G9-300A"}
+]},
+{"name":"H","teacher":"Ing. Soto Lugo","blocks":[
+{"day":4,"type":"Taller","start":16,"end":17,"room":"G2-262"},
+{"day":5,"type":"Taller","start":10,"end":13,"room":"G2-130"},
+{"day":4,"type":"Práctica","start":17,"end":19,"room":"G2-262"}
+]},
+{"name":"I","teacher":"Ing. Rodriguez Castillejo","blocks":[
+{"day":1,"type":"Taller","start":16,"end":18,"room":"G2-152"},
+{"day":2,"type":"Taller","start":16,"end":18,"room":"G2-102"},
+{"day":3,"type":"Práctica","start":16,"end":18,"room":"G2-130"}
+]},
+{"name":"J","teacher":"Ing. Colonio Garcia","blocks":[
+{"day":1,"type":"Taller","start":16,"end":18,"room":"G2-392"},
+{"day":3,"type":"Taller","start":16,"end":18,"room":"G2-262"},
+{"day":3,"type":"Práctica","start":18,"end":20,"room":"G2-262"}
+]}
+]
+},
+
+{
+"name":"Gestion de Proyectos de Construccion II",
+"code":"CO921",
+"cycle":9,
+"sections":[
+{"name":"G","teacher":"Ing. Colonia Garcia","blocks":[
+{"day":2,"type":"Taller","start":16,"end":18,"room":"G2-382"},
+{"day":4,"type":"Taller","start":16,"end":18,"room":"G2-302"},
+{"day":2,"type":"Práctica","start":18,"end":20,"room":"G2-382"}
+]},
+{"name":"H","teacher":"Ing. Felix Ulloa","blocks":[
+{"day":0,"type":"Taller","start":10,"end":12,"room":"G2-342"},
+{"day":3,"type":"Taller","start":10,"end":12,"room":"G2-372"},
+{"day":2,"type":"Práctica","start":10,"end":12,"room":"G2-202"}
+]},
+{"name":"I","teacher":"Ing. Tomas Loayza","blocks":[
+{"day":1,"type":"Taller","start":10,"end":12,"room":"G2-392"},
+{"day":3,"type":"Taller","start":10,"end":12,"room":"CCFIC-SE"},
+{"day":4,"type":"Práctica","start":8,"end":10,"room":"G2-252"}
+]},
+{"name":"J","teacher":"Ing. Rodriguez Castillejo","blocks":[
+{"day":1,"type":"Taller","start":18,"end":20,"room":"G2-130"},
+{"day":2,"type":"Taller","start":18,"end":20,"room":"G2-102"},
+{"day":3,"type":"Práctica","start":14,"end":16,"room":"G2-132"}
+]}
+]
+},
+
+{
+"name":"Recursos Hidraulicos",
+"code":"HH333",
+"cycle":8,
+"sections":[
+{"name":"G","teacher":"Ing. Roger Hidalgo","blocks":[
+{"day":2,"type":"Teoría","start":8,"end":10,"room":"G2-332"},
+{"day":3,"type":"Teoría","start":8,"end":10,"room":"G2-332"},
+{"day":1,"type":"Práctica","start":10,"end":12,"room":"G2-342"}
+]},
+{"name":"H","teacher":"Ing. Marisa Silva","blocks":[
+{"day":2,"type":"Teoría","start":14,"end":16,"room":"G2-130"},
+{"day":3,"type":"Teoría","start":14,"end":16,"room":"G2-130"},
+{"day":1,"type":"Práctica","start":14,"end":16,"room":"G2-152"}
+]},
+{"name":"I","teacher":"Ing. Carlos Iparraguirre","blocks":[
+{"day":0,"type":"Teoría","start":16,"end":18,"room":"G2-382"},
+{"day":0,"type":"Teoría","start":18,"end":20,"room":"G2-382"},
+{"day":1,"type":"Práctica","start":8,"end":10,"room":"G2-222"}
+]},
+{"name":"J","teacher":"Ing. Ada Arancibia","blocks":[
+{"day":2,"type":"Teoría","start":14,"end":16,"room":"G2-132"},
+{"day":3,"type":"Teoría","start":14,"end":16,"room":"G2-102"},
+{"day":1,"type":"Práctica","start":14,"end":16,"room":"G2-132"}
+]}
+]
+},
+
+{
+"name":"Diseño en Acero",
+"code":"ES832",
+"cycle":8,
+"sections":[
+{"name":"G","teacher":"Ing. Carlos Zavala","blocks":[
+{"day":0,"type":"Teoría","start":8,"end":10,"room":"G1-212"},
+{"day":2,"type":"Teoría","start":8,"end":10,"room":"G1-212"},
+{"day":3,"type":"Práctica","start":14,"end":16,"room":"G1-212"}
+]},
+{"name":"H","teacher":"Ing. Carlos Zavala","blocks":[
+{"day":0,"type":"Teoría","start":10,"end":12,"room":"G1-212"},
+{"day":2,"type":"Teoría","start":10,"end":12,"room":"G2-222"},
+{"day":3,"type":"Práctica","start":16,"end":18,"room":"G2-332"}
+]},
+{"name":"I","teacher":"Ing. Roy Reyna","blocks":[
+{"day":0,"type":"Teoría","start":10,"end":12,"room":"G2-332"},
+{"day":2,"type":"Teoría","start":10,"end":12,"room":"G2-332"},
+{"day":2,"type":"Práctica","start":16,"end":18,"room":"G2-222"}
+]},
+{"name":"J","teacher":"Ing. Proaño Tataje","blocks":[
+{"day":1,"type":"Teoría","start":10,"end":12,"room":"AUD-VG"},
+{"day":3,"type":"Teoría","start":10,"end":12,"room":"G2-202"},
+{"day":0,"type":"Práctica","start":16,"end":18,"room":"G2-262"}
+]}
+]
+},
+
+{
+"name":"Puentes y Obras de Arte",
+"code":"EC323",
+"cycle":9,
+"sections":[
+{"name":"G","teacher":"Ing. Alvarado Calderon","blocks":[
+{"day":1,"type":"Teoría","start":18,"end":20,"room":"G2-152"},
+{"day":4,"type":"Práctica","start":18,"end":20,"room":"G2-142"}
+]},
+{"name":"H","teacher":"Ing. Villena Sotomayor","blocks":[
+{"day":5,"type":"Teoría","start":8,"end":10,"room":"G2-252"},
+{"day":5,"type":"Práctica","start":10,"end":12,"room":"G2-252"}
+]},
+{"name":"I","teacher":"Ing. Duran Cardenas","blocks":[
+{"day":5,"type":"Teoría","start":9,"end":11,"room":"G2-152"},
+{"day":5,"type":"Práctica","start":11,"end":13,"room":"G2-152"}
+]}
+]
+},
+
+{
+"name":"Albañileria, Adobe y Madera",
+"code":"ES931",
+"cycle":9,
+"sections":[
+{"name":"G","teacher":"Ing. Edisson Moscoso","blocks":[
+{"day":1,"type":"Taller","start":10,"end":12,"room":"G2-302"},
+{"day":3,"type":"Taller","start":10,"end":12,"room":"G2-332"},
+{"day":4,"type":"Práctica","start":10,"end":12,"room":"G2-332"}
+]},
+{"name":"H","teacher":"Ing. Jose Masias","blocks":[
+{"day":0,"type":"Taller","start":8,"end":10,"room":"G2-392"},
+{"day":2,"type":"Taller","start":8,"end":10,"room":"G9-202"},
+{"day":1,"type":"Práctica","start":8,"end":10,"room":"G2-102"}
+]},
+{"name":"I","teacher":"Ing. Huaco Cardenas","blocks":[
+{"day":1,"type":"Taller","start":8,"end":10,"room":"G2-372"},
+{"day":3,"type":"Taller","start":8,"end":10,"room":"G1-212"},
+{"day":3,"type":"Práctica","start":16,"end":18,"room":"G2-302"}
+]}
+]
+},
+
+{
+"name":"Abastecimiento de Agua y Alcantarillado",
+"code":"SA253",
+"cycle":9,
+"sections":[
+{"name":"G","teacher":"Ing. Cordova Julca","blocks":[
+{"day":0,"type":"Teoría","start":16,"end":18,"room":"G2-332"},
+{"day":2,"type":"Taller","start":16,"end":18,"room":"G2-322"},
+{"day":5,"type":"Práctica","start":10,"end":12,"room":"G2-122"}
+]},
+{"name":"H","teacher":"Ing. Sabino Basualdo","blocks":[
+{"day":0,"type":"Teoría","start":18,"end":20,"room":"G2-152"},
+{"day":1,"type":"Taller","start":18,"end":20,"room":"G2-232"},
+{"day":2,"type":"Práctica","start":18,"end":20,"room":"G1-212"}
+]},
+{"name":"I","teacher":"Ing. Cordova Julca","blocks":[
+{"day":0,"type":"Teoría","start":18,"end":20,"room":"G2-142"},
+{"day":2,"type":"Taller","start":18,"end":20,"room":"G2-142"},
+{"day":5,"type":"Práctica","start":8,"end":10,"room":"G2-122"}
+]},
+{"name":"J","teacher":"Ing. Patricio Pareja","blocks":[
+{"day":1,"type":"Teoría","start":16,"end":18,"room":"G2-372"},
+{"day":2,"type":"Taller","start":14,"end":16,"room":"G2-342"},
+{"day":3,"type":"Práctica","start":16,"end":18,"room":"G2-382"}
+]}
+]
+},
+
+{
+"name":"Taller de competencia Profesional",
+"code":"TE910",
+"cycle":9,
+"sections":[
+{"name":"I","teacher":"Ing. Roger Hidalgo - Hidraulica","blocks":[
+{"day":1,"type":"Taller","start":8,"end":10},
+{"day":3,"type":"Taller","start":10,"end":12},
+{"day":2,"type":"Práctica","start":10,"end":12}
+]},
+{"name":"J","teacher":"Ing. Zenon Aguilar - Geotecnia","blocks":[
+{"day":2,"type":"Taller","start":10,"end":13},
+{"day":3,"type":"Taller","start":10,"end":13}
+]},
+{"name":"K","teacher":"Ing. Juan  Apaclla - Vialidad","blocks":[
+{"day":1,"type":"Teoría","start":14,"end":15},
+{"day":1,"type":"Práctica","start":15,"end":19}
+]},
+{"name":"G","teacher":"Ing. Padilla Laguna - SantaMaria - Construccion","blocks":[
+{"day":1,"type":"Taller","start":19,"end":20},
+{"day":3,"type":"Taller","start":16,"end":18},
+{"day":3,"type":"Práctica","start":18,"end":21}
+]},
+{"name":"H","teacher":"Ing. Diaz Figueroa - Estructuras","blocks":[
+{"day":4,"type":"Teoría","start":9,"end":10},
+{"day":4,"type":"Taller","start":10,"end":12},
+{"day":2,"type":"Práctica","start":10,"end":12}
+]}
+]
+},
+
+{
+"name":"Legislacion",
+"code":"AHD23",
+"cycle":10,
+"sections":[
+{"name":"G","teacher":"Ing. Christian Becerra","blocks":[
+{"day":1,"type":"Teoría","start":16,"end":18,"room":"G2-242"}
+]},
+{"name":"I","teacher":"Ing. Christian Becerra","blocks":[
+{"day":4,"type":"Teoría","start":10,"end":12,"room":"G2-372"}
+]}
+]
+},
+
+{
+"name":"Gestion Empresarial en la Construccion I",
+"code":"CO922",
+"cycle":10,
+"sections":[
+{"name":"G","teacher":"Ing. Jhon Tacza","blocks":[
+{"day":1,"type":"Taller","start":14,"end":16,"room":"G2-322"},
+{"day":2,"type":"Taller","start":14,"end":16,"room":"G2-372"},
+{"day":1,"type":"Práctica","start":16,"end":18,"room":"G2-342"}
+]},
+{"name":"H","teacher":"Ing. Jose Salgado","blocks":[
+{"day":2,"type":"Taller","start":10,"end":12,"room":"CCFIC-SD"},
+{"day":2,"type":"Taller","start":12,"end":14,"room":"G2-130"},
+{"day":3,"type":"Práctica","start":16,"end":18,"room":"G2-232"}
+]},
+{"name":"I","teacher":"Ing. Romy Berdejo","blocks":[
+{"day":4,"type":"Taller","start":16,"end":18,"room":"G2-372"},
+{"day":5,"type":"Taller","start":14,"end":16,"room":"G2-262"},
+{"day":5,"type":"Práctica","start":10,"end":12,"room":"G2-242"}
+]}
+]
+},
+
+{
+"name":"Realidad Nacional, Constitucion y Derechos Humanos",
+"code":"BRN01",
+"cycle":6,
+"sections":[
+{"name":"G","teacher":"Ing. Vergara Felices","blocks":[
+{"day":1,"type":"Taller","start":10,"end":12},
+{"day":4,"type":"Taller","start":16,"end":18},
+{"day":0,"type":"Práctica","start":15,"end":17}
+]},
+{"name":"H","teacher":"Ing. Vergara Felices","blocks":[
+{"day":3,"type":"Taller","start":13,"end":15},
+{"day":4,"type":"Taller","start":10,"end":12},
+{"day":4,"type":"Práctica","start":14,"end":16}
+]},
+{"name":"I","teacher":"Ing. Rios Segura","blocks":[
+{"day":0,"type":"Taller","start":10,"end":12},
+{"day":4,"type":"Taller","start":8,"end":10},
+{"day":2,"type":"Práctica","start":8,"end":10}
+]}
+]
+},
+
+{
+"name":"Irrigacion",
+"code":"HH413",
+"cycle":10,
+"sections":[
+{"name":"G","teacher":"Ing. Campaña Toro","blocks":[
+{"day":1,"type":"Teoría","start":18,"end":20},
+{"day":2,"type":"Taller","start":18,"end":20},
+{"day":0,"type":"Práctica","start":16,"end":18}
+]},
+{"name":"H","teacher":"Ing. Miguel Zubiaur","blocks":[
+{"day":0,"type":"Teoría","start":18,"end":20},
+{"day":1,"type":"Taller","start":18,"end":20},
+{"day":2,"type":"Práctica","start":16,"end":18}
+]},
+{"name":"I","teacher":"Ing. Castillo Navarro","blocks":[
+{"day":0,"type":"Teoría","start":16,"end":18},
+{"day":4,"type":"Taller","start":18,"end":20},
+{"day":1,"type":"Práctica","start":18,"end":20}
+]},
+{"name":"J","teacher":"Ing. Rivas Oyola","blocks":[
+{"day":0,"type":"Teoría","start":16,"end":18},
+{"day":0,"type":"Taller","start":18,"end":20},
+{"day":5,"type":"Práctica","start":8,"end":10}
+]}
+]
+},
+
+{
+"name":"Taller de Investigacion",
+"code":"TE991",
+"cycle":10,
+"sections":[
+{"name":"G","teacher":"Ing. Javier Arrieta - Construccion","blocks":[
+{"day":0,"type":"Taller","start":14,"end":16},
+{"day":3,"type":"Taller","start":14,"end":16},
+{"day":2,"type":"Práctica","start":16,"end":18}
+]},
+{"name":"H","teacher":"Ing. Jose Salgado - Construccion","blocks":[
+{"day":2,"type":"Taller","start":17,"end":18},
+{"day":3,"type":"Taller","start":17,"end":20},
+{"day":2,"type":"Práctica","start":18,"end":20}
+]},
+{"name":"I","teacher":"Ing. Moromi Nakata - Construccion","blocks":[
+{"day":1,"type":"Teoría","start":10,"end":13},
+{"day":3,"type":"Teoría","start":9,"end":10},
+{"day":3,"type":"Práctica","start":10,"end":12}
+]},
+{"name":"J","teacher":"Ing. Ana Torre - Construccion","blocks":[
+{"day":2,"type":"Taller","start":8,"end":10},
+{"day":3,"type":"Taller","start":11,"end":13},
+{"day":2,"type":"Práctica","start":10,"end":12}
+]},
+{"name":"L","teacher":"Ing. Rafael Salinas - Estructuras","blocks":[
+{"day":1,"type":"Taller","start":14,"end":16},
+{"day":2,"type":"Taller","start":14,"end":16},
+{"day":3,"type":"Práctica","start":14,"end":16}
+]},
+{"name":"M","teacher":"Ing. Juan Cabrera - Hidraulica","blocks":[
+{"day":1,"type":"Taller","start":14,"end":16},
+{"day":2,"type":"Taller","start":14,"end":16},
+{"day":3,"type":"Práctica","start":14,"end":16}
+]},
+{"name":"N","teacher":"Ing. Jorge Cardenas - Geoctenia","blocks":[
+{"day":4,"type":"Taller","start":12,"end":14},
+{"day":4,"type":"Taller","start":18,"end":20},
+{"day":5,"type":"Práctica","start":14,"end":16}
+]},
+{"name":"O","teacher":"Ing. Carlos Aiquipa - Vialidad","blocks":[
+{"day":1,"type":"Teoría","start":8,"end":12},
+{"day":3,"type":"Práctica","start":10,"end":12}
+]}
+]
+},
+
+
+{
+"name":"Investigacion de Operaciones",
+"code":"CO928",
+"cycle":"Electivo",
+"sections":[
+{"name":"G","teacher":"Ing. Calmet Ubillus","blocks":[
+{"day":4,"type":"Teoría","start":18,"end":20,"room":"G2-382"},
+{"day":5,"type":"Práctica","start":8,"end":10,"room":"G2-232"}
+]}
+]
+}
+]
