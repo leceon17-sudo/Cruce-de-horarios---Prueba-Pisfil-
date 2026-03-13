@@ -247,6 +247,22 @@ const endHour=22
 let courses=[]
 let activeCourses=[]
 
+ fetch("CursosFIC_pisfil.json")
+  .then(response => response.json())
+  .then(data => {
+      courses = data
+
+      courses.forEach(c=>{
+          if(!c.color) c.color=randomColor()
+      })
+
+      console.log(courses)
+      populatePool()
+  })
+  .catch(error=>{
+      console.error("Error cargando JSON:", error)
+  })
+
 function randomColor(){
 return "hsl("+Math.floor(Math.random()*360)+",65%,40%)"
 }
@@ -530,4 +546,5 @@ box.innerHTML=html
 </script>
 
 </body>
+
 </html>
