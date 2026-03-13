@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GenFICPS – Generador de Horarios FICPS</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+<style>
+body{
+font-family:Arial,Helvetica,sans-serif;
+margin:0;
+padding:0;
+background:#eef2f7;
+}
+h1{text-align:center}
+.container{display:grid;grid-template-columns:460px 1fr;gap:20px}
+.panel{background:white;border-radius:12px;padding:16px;box-shadow:0 4px 10px rgba(0,0,0,.08)}
+label{font-size:13px;font-weight:bold}
+input,select,button{width:100%;padding:8px;margin-top:6px;margin-bottom:10px}
+button{cursor:pointer;border:none;background:#2563eb;color:white;border-radius:8px}
+button:hover{background:#1d4ed8}
+.smallBtn{background:#64748b}
+.smallBtn:hover{background:#475569}
+.courseBox{border:1px solid #ddd;border-radius:8px;padding:8px;margin-bottom:10px;font-size:13px}
+.schedule{
+overflow:visible;
+height:auto;
+}
+table{
+border-collapse:collapse;
+width:100%;
+background:white;
+}
+#exportArea{
+width:100%;
+max-width:100%;
+page-break-inside: avoid;
+display:inline-block;
+margin:0;
+}
+
+.pdfSchedule table{
+width:100%;
+}
+
+th{
+background:#2563eb;
+color:white;
+font-weight:600;
+font-size:11px;
+position:sticky;
+top:0;
+}
+
+td{
+border:1px solid #cbd5e1;
+text-align:center;
+font-size:10px;
+padding:4px;
+height:30px;
+}
+
+td:first-child{
+font-weight:bold;
+background:#f1f5f9;
+}
+
+.block{
+font-size:9px;
+border-radius:6px;
+padding:3px;
+color:white;
+font-weight:600;
+box-shadow:0 2px 4px rgba(0,0,0,0.2);
+}
+
+.conflict{background:#ff6b6b!important}
+.listBox{max-height:150px;overflow:auto;border:1px solid #ddd;border-radius:6px;padding:6px}
+
+.pdfTitle{
+text-align:center;
+margin-bottom:10px;
+font-family:'Montserrat',sans-serif;
+font-size:22px;
+letter-spacing:1px;
+font-weight:700;
+}
+
+.pdfLayout{
+display:grid;
+grid-template-columns: 4fr 1.2fr;
+gap:15px;
+align-items:start;
+width:100%;
+}
+
+.pdfSchedule{
+flex:3;
+}
+
+.pdfSummary{
+flex:1;
+}
+
+.pdfSummary .courseBox{
+font-size:11px;
+border-left:4px solid #2563eb;
+background:#f8fafc;
+padding:8px;
+margin-bottom:8px;
+}
+
+.pdfHeader{
+text-align:center;
+margin-bottom:15px;
+border-bottom:3px solid #2563eb;
+padding-bottom:8px;
+}
+
+.pdfTitleMain{
+font-family:'Montserrat',sans-serif;
+font-size:28px;
+font-weight:700;
+letter-spacing:1px;
+color:#1e293b;
+}
+
+.pdfSubtitle{
+font-size:14px;
+color:#475569;
+margin-top:4px;
+}
+
+.pdfHeader{
+page-break-after: avoid;
+break-after: avoid;
+}
+
+.pdfLayout{
+page-break-before: avoid;
+break-before: avoid;
+}
+
+
+</style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+
+<script>
+
+function downloadPDF(){
+
+const element = document.getElementById("exportArea")
+
+const width = element.scrollWidth
+const height = element.scrollHeight
+
+const opt = {
+margin:[0,0,0,0],
+filename:'Horario_FICPS.pdf',
+image:{ type:'jpeg', quality:1 },
+html2canvas:{
+scale:2,
+scrollY:0
+},
+jsPDF:{
+unit:'px',
+format:[width, height],
+orientation:'landscape'
+}
+}
+
+html2pdf().set(opt).from(element).save()
+
+}
+
+</script>
+
+</head>
+<body>
+
+<div id="pdfHeader">
+<h2>CICLO FIC 26-1</h2>
+</div>
+
+<h1>GenFICPS – Generador de Horarios FICPS</h1>
+
+<div class="container">
+
+<div class="panel">
+
+<h3>📂 Cargar base de cursos</h3>
+<input type="file" id="fileInput">
+<button class="smallBtn" onclick="loadFile()">Cargar archivo</button>
+
+<hr>
+
+<h3>📚 Agregar cursos al horario</h3>
+
+<label>Buscar curso</label>
+<select id="coursePool"></select>
+
+<button onclick="addCourse()">➕ Agregar curso</button>
+
+<div class="listBox" id="selectedCourses"></div>
+
+<button onclick="clearSchedule()" class="smallBtn">🧹 Limpiar horario</button>
+
+<button onclick="downloadPDF()">📄 Descargar PDF</button>
+
+</div>
+
+<div id="exportArea">
+
+<div class="pdfHeader">
+<div class="pdfTitleMain">Horario Académico</div>
+<div class="pdfSubtitle">CICLO FIC 26-1</div>
+</div>
+
+<div class="pdfLayout">
+
+<div class="pdfSchedule">
+<div class="panel schedule">
+<table id="schedule"></table>
+</div>
+</div>
+
+<div class="pdfSummary">
+<div class="panel">
+<h3>Resumen de cursos</h3>
+<div id="summaryBox"></div>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<script>
+const days=["Lunes","Martes","Miércoles","Jueves","Viernes","Sábado"]
+const startHour=8
+const endHour=22
+
+let courses=[]
+let activeCourses=[]
+
+function randomColor(){
+return "hsl("+Math.floor(Math.random()*360)+",65%,40%)"
+}
+
+function buildTable(){
+let html="<tr><th>Hora</th>"
+
+for(let d of days) html+=`<th>${d}</th>`
+
+html+="</tr>"
+
+for(let h=startHour;h<endHour;h++){
+let label=h.toString().padStart(2,'0')+":00"
+
+html+=`<tr><td>${label}</td>`
+
+for(let d=0;d<days.length;d++){
+html+=`<td data-day='${d}' data-hour='${h}'></td>`
+}
+
+html+="</tr>"
+}
+
+document.getElementById("schedule").innerHTML=html
+}
+
+buildTable()
+
+function loadFile(){
+
+const file=document.getElementById("fileInput").files[0]
+if(!file)return
+
+const reader=new FileReader()
+
+reader.onload=function(e){
+
+try{
+
+courses=JSON.parse(e.target.result)
+
+courses.forEach(c=>{
+if(!c.color)c.color=randomColor()
+})
+
+populatePool()
+
+}catch{
+alert("Archivo inválido")
+}
+
+}
+
+reader.readAsText(file)
+
+}
+
+function populatePool(){
+
+const pool=document.getElementById("coursePool")
+
+pool.innerHTML="<option value=''>Seleccionar curso</option>"
+
+let grouped={}
+
+courses.forEach((c,i)=>{
+
+let cycle=c.cycle || "Otros"
+
+if(!grouped[cycle]) grouped[cycle]=[]
+
+grouped[cycle].push({course:c,index:i})
+
+})
+
+Object.keys(grouped)
+.sort((a,b)=>{
+if(a==="Electivo") return 1
+if(b==="Electivo") return -1
+return a-b
+})
+.forEach(cycle=>{
+
+pool.innerHTML+=`<optgroup label="Ciclo ${cycle}">`
+
+grouped[cycle].forEach(obj=>{
+
+pool.innerHTML+=`<option value='${obj.index}'>
+${obj.course.code} - ${obj.course.name}
+</option>`
+
+})
+
+pool.innerHTML+="</optgroup>"
+
+})
+
+}
+
+function addCourse(){
+
+const index=document.getElementById("coursePool").value
+
+if(index==="")return
+
+if(activeCourses.includes(parseInt(index)))return
+
+activeCourses.push(parseInt(index))
+
+renderActiveCourses()
+
+}
+
+function removeCourse(i){
+
+activeCourses=activeCourses.filter(c=>c!==i)
+
+renderActiveCourses()
+updateSchedule()
+
+}
+
+function renderActiveCourses(){
+
+const div=document.getElementById("selectedCourses")
+
+if(activeCourses.length===0){
+div.innerHTML="<i>No hay cursos seleccionados</i>"
+return
+}
+
+let html=""
+
+activeCourses.forEach(i=>{
+
+const c=courses[i]
+
+html+=`<div class='courseBox'>`
+html+=`<b>${c.code}</b> ${c.name}`
+
+html+=` <button class='smallBtn' onclick='removeCourse(${i})'>❌</button><br>`
+
+html+=`<select onchange='chooseSection(${i},this.value)'>`
+html+="<option value=''>Elegir sección</option>"
+
+c.sections.forEach((s,j)=>{
+html+=`<option value='${j}'>Sec ${s.name}</option>`
+})
+
+html+="</select></div>"
+
+})
+
+ div.innerHTML=html
+
+}
+
+function chooseSection(i,v){
+
+courses[i].selected=v
+
+updateSchedule()
+
+}
+
+function clearGrid(){
+
+document.querySelectorAll("td[data-day]").forEach(c=>{
+
+c.innerHTML=""
+c.classList.remove("conflict")
+
+})
+
+}
+
+function clearSchedule(){
+
+courses.forEach(c=>c.selected="")
+
+updateSchedule()
+renderActiveCourses()
+
+}
+
+function updateSchedule(){
+
+clearGrid()
+
+let cellTypes={} // guarda tipos por celda
+
+activeCourses.forEach(i=>{
+
+const course=courses[i]
+
+if(!course.selected)return
+
+const sec=course.sections[course.selected]
+
+sec.blocks.forEach(b=>{
+
+for(let h=b.start;h<b.end;h++){
+
+const key=b.day+"-"+h
+
+const cell=document.querySelector(`td[data-day='${b.day}'][data-hour='${h}']`)
+
+if(!cellTypes[key]) cellTypes[key]=[]
+
+if(cellTypes[key].length>0){
+
+cell.classList.add("conflict")
+
+let prevTypes=cellTypes[key]
+
+let danger=false
+
+prevTypes.forEach(t=>{
+if(t=="Practica" && b.type=="Practica"){
+danger=true
+}
+})
+
+if(danger){
+console.warn("PELIGRO: cruce de PRACTICA con PRACTICA")
+}else{
+console.warn("Cruce detectado:",prevTypes,"con",b.type)
+}
+
+}
+
+cellTypes[key].push(b.type)
+
+cell.innerHTML+=`<div class='block' style='background:${course.color}'>
+${course.code}<br>
+${b.type}<br>
+Sec ${sec.name}<br>
+${b.room ? "<b>Salón: "+b.room+"</b>" : ""}
+</div>`
+
+}
+
+})
+
+})
+
+updateSummary()
+
+}
+
+function updateSummary(){
+
+const box=document.getElementById("summaryBox")
+
+let html=""
+
+activeCourses.forEach(i=>{
+
+const c=courses[i]
+
+if(!c.selected)return
+
+const sec=c.sections[c.selected]
+
+const teacher=sec.teacher ? sec.teacher : "No definido"
+
+html+=`<div class='courseBox'>
+<b>${c.code}</b> ${c.name}<br>
+Sección: ${sec.name}<br>
+Docente: ${teacher}
+</div>`
+
+})
+
+if(html==="") html="<i>No hay cursos seleccionados</i>"
+
+box.innerHTML=html
+
+}
+
+</script>
+
+</body>
+</html>
