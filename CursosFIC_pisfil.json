@@ -11,7 +11,7 @@
 ]},
 {"name":"H","teacher":"Ing. Jose Masias","blocks":[
 {"day":0,"type":"Teoría","start":10,"end":12,"room":"G2-392"},
-{"day":2,"type":"Teoría","start":10,"end":12,"room":"G2-332"},
+{"day":2,"type":"Teoría","start":10,"end":12,"room":"G2-122"},
 {"day":1,"type":"Práctica","start":10,"end":12,"room":"J2-252"}
 ]},
 {"name":"I","teacher":"Ing. Jorge Gallardo","blocks":[
